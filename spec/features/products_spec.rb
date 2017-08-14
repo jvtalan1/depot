@@ -42,7 +42,7 @@ describe 'product page navigation', type: :feature do
           
           it 'returns an error for all fields' do
             expect(page).to have_content "Title can't be blank"
-            expect(page).to have_content "Description can't blank"
+            expect(page).to have_content "Description can't be blank"
             expect(page).to have_content "Image url can't be blank"
             expect(page).to have_content "Price is not a number"
           end
@@ -57,7 +57,7 @@ describe 'product page navigation', type: :feature do
             expect(page).to have_content "Title can't be blank"
           end
           it 'will not return an error for other fields' do
-            expect(page).not_to have_content "Description can't blank"
+            expect(page).not_to have_content "Description can't be blank"
             expect(page).not_to have_content "Image url can't be blank"
             expect(page).not_to have_content "Price is not a number"
           end
@@ -102,7 +102,7 @@ describe 'product page navigation', type: :feature do
             expect(page).to have_content "Price is not a number"
           end
           it 'will not return an error for other fields' do
-            expect(page).not_to have_content "Title can't blank"
+            expect(page).not_to have_content "Title can't be blank"
             expect(page).not_to have_content "Description can't be blank"
             expect(page).not_to have_content "Image url can't be blank"
           end
