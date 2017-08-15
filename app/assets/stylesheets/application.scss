@@ -96,3 +96,20 @@ body, body > p, body > ol, body > ul, body > td {
     display: none;
   }
 }
+
+.depot_form {
+  fieldset {
+    background: #efe;
+
+    legend {
+      color: #dfd;
+      background: #141;
+      font-family: sans-serif;
+      padding: 0.2em 1em;
+    }
+
+    div {
+      margin-bottom: 0.3em;
+    }
+  }
+}
