@@ -18,6 +18,6 @@
     = f.text_field :email, size: 40
   .field
     = f.label :pay_type
-    = f.number_field :pay_type, Order.pay_type.keys, prompt: 'Select a payment method'
+    = f.select :pay_type, Order.pay_types.keys, prompt: 'Select a payment method'
   .actions
-    = f.submit, 'Place Order'
+    = f.submit 'Place Order'
